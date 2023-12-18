@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerPlatform", "WorkerPlatform", "{41F4E432-124A-47D2-A3E9-DDA23D00F8A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerPlatform.API", "WorkerPlatform\WorkerPlatform.API\WorkerPlatform.API.csproj", "{3822C053-8E1F-4353-95A4-0E606702A2EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3822C053-8E1F-4353-95A4-0E606702A2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3822C053-8E1F-4353-95A4-0E606702A2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3822C053-8E1F-4353-95A4-0E606702A2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3822C053-8E1F-4353-95A4-0E606702A2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3822C053-8E1F-4353-95A4-0E606702A2EE} = {41F4E432-124A-47D2-A3E9-DDA23D00F8A8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDF85A4D-F2A9-44C3-B5C1-83228DFA88CA}
+	EndGlobalSection
+EndGlobal
