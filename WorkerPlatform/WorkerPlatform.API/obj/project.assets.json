@@ -4465,26 +4465,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aksel\\.nuget\\packages\\": {}
+    "C:\\Users\\Gfam1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aksel\\Desktop\\C#\\Worker\\WorkerPlatform\\WorkerPlatform.API\\WorkerPlatform.API.csproj",
+      "projectUniqueName": "C:\\Users\\Gfam1\\Webutveckling\\WebbAPI\\WorkerAPI\\Worker\\WorkerPlatform\\WorkerPlatform.API\\WorkerPlatform.API.csproj",
       "projectName": "WorkerPlatform.API",
-      "projectPath": "C:\\Users\\Aksel\\Desktop\\C#\\Worker\\WorkerPlatform\\WorkerPlatform.API\\WorkerPlatform.API.csproj",
-      "packagesPath": "C:\\Users\\Aksel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aksel\\Desktop\\C#\\Worker\\WorkerPlatform\\WorkerPlatform.API\\obj\\",
+      "projectPath": "C:\\Users\\Gfam1\\Webutveckling\\WebbAPI\\WorkerAPI\\Worker\\WorkerPlatform\\WorkerPlatform.API\\WorkerPlatform.API.csproj",
+      "packagesPath": "C:\\Users\\Gfam1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gfam1\\Webutveckling\\WebbAPI\\WorkerAPI\\Worker\\WorkerPlatform\\WorkerPlatform.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aksel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Gfam1\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
