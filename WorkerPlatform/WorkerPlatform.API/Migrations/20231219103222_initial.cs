@@ -5,7 +5,7 @@
 namespace WorkerPlatform.API.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,8 +16,7 @@ namespace WorkerPlatform.API.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    WorkFieldId = table.Column<int>(type: "int", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -44,26 +43,31 @@ namespace WorkerPlatform.API.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    AreaId = table.Column<int>(type: "int", nullable: false)
+                    ManagerId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_WorkFields", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_WorkFields_Managers_ManagerId",
+                        column: x => x.ManagerId,
+                        principalTable: "Managers",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
                 name: "EmployeeWorkField",
                 columns: table => new
                 {
-                    WorkFieldsId = table.Column<int>(type: "int", nullable: false),
-                    workersId = table.Column<int>(type: "int", nullable: false)
+                    EmployeesId = table.Column<int>(type: "int", nullable: false),
+                    WorkFieldsId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EmployeeWorkField", x => new { x.WorkFieldsId, x.workersId });
+                    table.PrimaryKey("PK_EmployeeWorkField", x => new { x.EmployeesId, x.WorkFieldsId });
                     table.ForeignKey(
-                        name: "FK_EmployeeWorkField_Employees_workersId",
-                        column: x => x.workersId,
+                        name: "FK_EmployeeWorkField_Employees_EmployeesId",
+                        column: x => x.EmployeesId,
                         principalTable: "Employees",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -76,9 +80,14 @@ namespace WorkerPlatform.API.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_EmployeeWorkField_workersId",
+                name: "IX_EmployeeWorkField_WorkFieldsId",
                 table: "EmployeeWorkField",
-                column: "workersId");
+                column: "WorkFieldsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_WorkFields_ManagerId",
+                table: "WorkFields",
+                column: "ManagerId");
         }
 
         /// <inheritdoc />
@@ -88,13 +97,13 @@ namespace WorkerPlatform.API.Migrations
                 name: "EmployeeWorkField");
 
             migrationBuilder.DropTable(
-                name: "Managers");
-
-            migrationBuilder.DropTable(
                 name: "Employees");
 
             migrationBuilder.DropTable(
                 name: "WorkFields");
+
+            migrationBuilder.DropTable(
+                name: "Managers");
         }
     }
 }
