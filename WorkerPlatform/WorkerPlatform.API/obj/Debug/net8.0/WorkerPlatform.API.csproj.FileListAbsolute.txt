@@ -273,3 +273,4 @@ C:\Users\Gfam1\Webutveckling\WebbAPI\WorkerAPI\Worker\WorkerPlatform\WorkerPlatf
 C:\Users\Gfam1\Webutveckling\WebbAPI\WorkerAPI\Worker\WorkerPlatform\WorkerPlatform.API\obj\Debug\net8.0\WorkerPlatform.API.pdb
 C:\Users\Gfam1\Webutveckling\WebbAPI\WorkerAPI\Worker\WorkerPlatform\WorkerPlatform.API\obj\Debug\net8.0\WorkerPlatform.API.genruntimeconfig.cache
 C:\Users\Gfam1\Webutveckling\WebbAPI\WorkerAPI\Worker\WorkerPlatform\WorkerPlatform.API\obj\Debug\net8.0\ref\WorkerPlatform.API.dll
+C:\Users\Aksel\Desktop\C#\Worker\WorkerPlatform\WorkerPlatform.API\obj\Debug\net8.0\WorkerPlatform.API.sourcelink.json

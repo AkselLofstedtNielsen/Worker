@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkerPlatform.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+722117a1dfa051b6bc8012783e64abe077320538")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14f0f975633d7827655b2df2d919ada3539f7e2f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkerPlatform.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkerPlatform.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,7 +12,7 @@ using WorkerPlatform.API.Data;
 namespace WorkerPlatform.API.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20231219103222_initial")]
+    [Migration("20231222130940_initial")]
     partial class initial
     {
         /// <inheritdoc />
