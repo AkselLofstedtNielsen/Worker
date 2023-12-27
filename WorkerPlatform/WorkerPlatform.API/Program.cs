@@ -13,10 +13,10 @@ builder.Services.AddSwaggerGen();
 //    options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 //});
 builder.Services.AddDbContext<Context>();
- builder.Services.AddDbContext<Context>(
-    options => 
-     options.UseSqlServer("Server=localhost;Database=master;Trusted_Connection=True;Trust Server Certificate=Yes")
- );
+ 
+builder.Services.ConfigureHttpJsonOptions(options => {
+    options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 
 var app = builder.Build();
 
@@ -31,7 +31,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/employee", (Context context) =>
 {
-    context.Employees.Include("Workfields").ToList();
+    return context.Employees.Include("WorkFields").ToList();
 });
 
 app.MapPost("/employee", (Context context, string name) => {
@@ -79,7 +79,7 @@ app.MapPut("/employee/{id}", async (Context context, int id, Employee updatedEmp
 
 app.MapGet("/workField", (Context context) =>
 {
-    context.WorkFields.Include("Employees").ToList();
+    return context.WorkFields.Include("Employees").ToList();
 });
 
 app.MapPost("/workField", (Context context, string name) =>
@@ -92,7 +92,7 @@ app.MapPost("/workField", (Context context, string name) =>
 
 app.MapGet("/manager", (Context context) =>
 {
-    context.Managers.Include("Workfields").ToList();
+    return context.Managers.Include("WorkFields").ToList();
 });
 
 app.MapPost("/manager", (Context context, string name) => {

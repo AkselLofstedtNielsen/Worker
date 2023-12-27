@@ -19,7 +19,7 @@ namespace WorkerPlatform.API.Data
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-        => options.UseSqlServer($"Data Source={DbPath}");
+        => options.UseSqlite($"Data Source={DbPath}");
 
     }
 }

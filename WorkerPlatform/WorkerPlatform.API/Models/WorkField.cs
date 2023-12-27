@@ -7,7 +7,7 @@ public class WorkField
 
     public Manager? Manager { get; set; }
 
-    public List<Employee>? Employees { get; set; }
+    public ICollection<Employee>? Employees { get; set; } = new List<Employee> ();
 
     // public int AreaId { get; set; } //FK
 
