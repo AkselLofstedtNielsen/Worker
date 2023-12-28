@@ -11,4 +11,9 @@ public class Manager
             Name = name;
         }
 
+        public Manager()
+        {
+      
+        }
+
 }

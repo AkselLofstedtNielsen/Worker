@@ -11,8 +11,8 @@ using WorkerPlatform.API.Data;
 namespace WorkerPlatform.API.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20231227144038_initialtwo")]
-    partial class initialtwo
+    [Migration("20231228135856_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

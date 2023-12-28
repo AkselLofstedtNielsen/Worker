@@ -13,6 +13,11 @@ namespace WorkerPlatform.API.Models;
         public Employee(string name){
             Name = name;
         }
+
+         public Employee()
+        {
+      
+        }
     }
 
 
